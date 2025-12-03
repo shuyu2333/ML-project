@@ -1,0 +1,113 @@
+INFO:root:Namespace(model_name='ANS', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2025-12-03 17:49:10 ---------------------------------------------
+INFO:root:
+===================================
+ Arguments          | Values       
+===================================
+ batch_size         | 256         
+ data_appendix      |             
+ dataset            | MovieLens_1M
+ dropout            | 0           
+ early_stop         | 10          
+ embedding_size     | 64          
+ epoch              | 200         
+ eval_batch_size    | 256         
+ gama               | 0.03        
+ gpu                | 0           
+ l2                 | 0           
+ lr                 | 0.001       
+ main_metric        |             
+ num_neg            | 1           
+ num_workers        | 0           
+ optimizer          | Adam        
+ random_seed        | 0           
+ save_final_results | 1           
+ test_all           | 0           
+ topk               | 5,10,20,50  
+===================================
+INFO:root:Device: cuda
+INFO:root:Reading data from "../data/", dataset = "MovieLens_1M" 
+INFO:root:Namespace(model_name='ANS', model_mode='')
+INFO:root:--------------------------------------------- BEGIN: 2025-12-03 17:57:03 ---------------------------------------------
+INFO:root:
+===================================
+ Arguments          | Values       
+===================================
+ batch_size         | 256         
+ data_appendix      |             
+ dataset            | MovieLens_1M
+ dropout            | 0           
+ early_stop         | 10          
+ embedding_size     | 64          
+ epoch              | 200         
+ eval_batch_size    | 256         
+ gama               | 0.03        
+ gpu                | 0           
+ l2                 | 0           
+ lr                 | 0.001       
+ main_metric        |             
+ num_neg            | 1           
+ num_workers        | 0           
+ optimizer          | Adam        
+ random_seed        | 0           
+ save_final_results | 1           
+ test_all           | 0           
+ topk               | 5,10,20,50  
+===================================
+INFO:root:Device: cuda
+INFO:root:Reading data from "../data/", dataset = "MovieLens_1M" 
+INFO:root:Loading train from ../data/MovieLens_1M\train.csv
+INFO:root:Loading dev from ../data/MovieLens_1M\dev.csv
+INFO:root:Loading test from ../data/MovieLens_1M\test.csv
+INFO:root:Counting dataset statistics...
+INFO:root:"# user": 6032, "# item": 3125, "# entry": 574197
+INFO:root:Save corpus to ../data/MovieLens_1M\BaseReader.pkl
+INFO:root:#params: 586176
+INFO:root:ANS(
+  (user_embedding): Embedding(6033, 64)
+  (item_embedding): Embedding(3126, 64)
+)
+INFO:root:Test Before Training: (HR@5:0.0431,NDCG@5:0.0244,HR@10:0.0995,NDCG@10:0.0422,HR@20:0.1952,NDCG@20:0.0662,HR@50:0.4812,NDCG@50:0.1218)
+INFO:root:Optimizer: Adam
+INFO:root:Epoch 1     loss=0.5126 [6.8 s]	dev=(HR@5:0.3517,NDCG@5:0.2355) [0.0 s] *
+INFO:root:Epoch 2     loss=0.3847 [8.2 s]	dev=(HR@5:0.3747,NDCG@5:0.2496) [0.0 s] *
+INFO:root:Epoch 3     loss=0.3607 [13.6 s]	dev=(HR@5:0.3810,NDCG@5:0.2535) [0.0 s] *
+INFO:root:Epoch 4     loss=0.3449 [14.2 s]	dev=(HR@5:0.3895,NDCG@5:0.2640) [0.0 s] *
+INFO:root:Epoch 5     loss=0.3337 [14.1 s]	dev=(HR@5:0.3864,NDCG@5:0.2612) [0.0 s]
+INFO:root:Epoch 6     loss=0.3264 [14.5 s]	dev=(HR@5:0.3868,NDCG@5:0.2633) [0.0 s]
+INFO:root:Epoch 7     loss=0.3216 [7.2 s]	dev=(HR@5:0.3966,NDCG@5:0.2676) [0.0 s] *
+INFO:root:Epoch 8     loss=0.3177 [12.5 s]	dev=(HR@5:0.4040,NDCG@5:0.2706) [0.0 s] *
+INFO:root:Epoch 9     loss=0.3145 [12.2 s]	dev=(HR@5:0.4016,NDCG@5:0.2708) [0.0 s] *
+INFO:root:Epoch 10    loss=0.3119 [6.6 s]	dev=(HR@5:0.4087,NDCG@5:0.2751) [0.0 s] *
+INFO:root:Epoch 11    loss=0.3088 [7.1 s]	dev=(HR@5:0.4024,NDCG@5:0.2709) [0.0 s]
+INFO:root:Epoch 12    loss=0.3083 [7.8 s]	dev=(HR@5:0.4059,NDCG@5:0.2708) [0.0 s]
+INFO:root:Epoch 13    loss=0.3061 [7.7 s]	dev=(HR@5:0.4052,NDCG@5:0.2706) [0.0 s]
+INFO:root:Epoch 14    loss=0.3045 [7.7 s]	dev=(HR@5:0.4083,NDCG@5:0.2744) [0.0 s]
+INFO:root:Epoch 15    loss=0.3031 [7.3 s]	dev=(HR@5:0.4055,NDCG@5:0.2721) [0.0 s]
+INFO:root:Epoch 16    loss=0.3017 [7.1 s]	dev=(HR@5:0.4040,NDCG@5:0.2749) [0.0 s]
+INFO:root:Epoch 17    loss=0.3004 [7.1 s]	dev=(HR@5:0.4063,NDCG@5:0.2744) [0.0 s]
+INFO:root:Epoch 18    loss=0.2991 [7.1 s]	dev=(HR@5:0.3970,NDCG@5:0.2687) [0.0 s]
+INFO:root:Epoch 19    loss=0.2980 [7.2 s]	dev=(HR@5:0.4137,NDCG@5:0.2815) [0.0 s] *
+INFO:root:Epoch 20    loss=0.2966 [7.5 s]	dev=(HR@5:0.4071,NDCG@5:0.2759) [0.0 s]
+INFO:root:Epoch 21    loss=0.2956 [7.4 s]	dev=(HR@5:0.4009,NDCG@5:0.2699) [0.0 s]
+INFO:root:Epoch 22    loss=0.2945 [7.7 s]	dev=(HR@5:0.4040,NDCG@5:0.2725) [0.0 s]
+INFO:root:Epoch 23    loss=0.2941 [7.7 s]	dev=(HR@5:0.3985,NDCG@5:0.2694) [0.0 s]
+INFO:root:Epoch 24    loss=0.2928 [7.1 s]	dev=(HR@5:0.3997,NDCG@5:0.2716) [0.0 s]
+INFO:root:Epoch 25    loss=0.2925 [7.0 s]	dev=(HR@5:0.3973,NDCG@5:0.2675) [0.0 s]
+INFO:root:Epoch 26    loss=0.2910 [7.1 s]	dev=(HR@5:0.3942,NDCG@5:0.2693) [0.0 s]
+INFO:root:Epoch 27    loss=0.2908 [7.0 s]	dev=(HR@5:0.4020,NDCG@5:0.2719) [0.0 s]
+INFO:root:Epoch 28    loss=0.2899 [8.0 s]	dev=(HR@5:0.3903,NDCG@5:0.2654) [0.0 s]
+INFO:root:Early stop at 28 based on dev result.
+INFO:root:
+Best Iter(dev)=   19	 dev=(HR@5:0.4137,NDCG@5:0.2815) [242.9 s] 
+INFO:root:Load model from ../model/ANS/ANS__MovieLens_1M__0__lr=0.001__l2=0__embedding_size=64.pt
+INFO:root:
+Dev  After Training: (HR@5:0.4137,NDCG@5:0.2815,HR@10:0.5742,NDCG@10:0.3332,HR@20:0.7705,NDCG@20:0.3829,HR@50:0.9559,NDCG@50:0.4203)
+INFO:root:
+Test After Training: (HR@5:0.3751,NDCG@5:0.2503,HR@10:0.5658,NDCG@10:0.3119,HR@20:0.7568,NDCG@20:0.3600,HR@50:0.9548,NDCG@50:0.3998)
+INFO:root:Saving top-100 recommendation results to: ../log/ANS\ANS__MovieLens_1M__0__lr=0\rec-ANS-dev.csv
+INFO:root:dev Prediction results saved!
+INFO:root:Saving top-100 recommendation results to: ../log/ANS\ANS__MovieLens_1M__0__lr=0\rec-ANS-test.csv
+INFO:root:test Prediction results saved!
+INFO:root:
+--------------------------------------------- END: 2025-12-03 18:01:09 ---------------------------------------------

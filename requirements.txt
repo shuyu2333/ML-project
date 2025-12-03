@@ -1,0 +1,9 @@
+Python==3.10.4
+numpy==1.23.3
+ipython==8.10.0
+jupyter==1.0.0
+tqdm==4.66.1
+pandas==1.4.4
+scipy==1.13.1
+pyyaml
+torch==1.12.1+cu116
