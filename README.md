@@ -20,7 +20,7 @@ pip install hyperopt==0.2.5 scikit_learn>=0.23.2 pyyaml>=5.1.0 colorlog==4.7.2 c
 ```bash
 cd src
 python main.py --model_name ANS --dataset Grocery_and_Gourmet_Food --path ../data/
-
+c
 python src/main.py --model_name ANS --dataset Grocery_and_Gourmet_Food
 
 # 说明与容错
